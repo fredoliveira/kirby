@@ -1,0 +1,30 @@
+@import "bootstrap.less";
+
+.button {
+	font-size: 12px;
+	padding: 5px 10px;
+	color: #444;
+	font-weight: bold;
+	border: none;
+	#gradient > .vertical(#eee,#ddd);
+	.border-radius();
+	margin-right: 3px;
+	
+	&.dark {
+		#gradient > .vertical(#ccc,#aaa);
+	}
+	
+	&.blue {
+		#gradient > .vertical(#bbdcfb, #93b9dc);
+	}
+	
+	&.green {
+		#gradient > .vertical(#7cd6a8, #64b78c);
+	}
+}
+
+.sbutton {
+	.button();
+	font-size: 11px;
+	padding: 3px 5px;
+}
